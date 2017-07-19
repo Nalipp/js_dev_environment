@@ -1,9 +1,16 @@
+<!-- this file contains ejs but html file extension is left in place for better html for mat colors -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>development environment</title>
+    <!-- BEGIN TRACKJS -->
+    <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+        <script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+    <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    <!-- END TRACKJS -->
+    <% } %>
 	</head>
 	<body>
     <h1>Users</h1>
